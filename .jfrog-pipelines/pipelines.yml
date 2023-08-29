@@ -1,14 +1,11 @@
-template: true
-valuesFilePath: ../values/gitRepoValues.yml
-
 resources:
   - name: S_PS_GPM_6284_0001_GitRepo
     type: GitRepo
     configuration:
       gitProvider: gitHub_neha
-      path: {{ .Values.GitHub.Org_test_Automation_PowerShell.path }}
+      path: agrasth/Org_test_Automation_PowerShell
       branches:
-        include: {{gitBranch}}
+        include: master
 
   - name: S_PS_GM_6284_0001_BI
     type: BuildInfo
