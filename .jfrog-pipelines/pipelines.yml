@@ -2,7 +2,7 @@ resources:
   - name: S_PS_GPM_6284_0001_GitRepo
     type: GitRepo
     configuration:
-      gitProvider: gitHub_neha
+      gitProvider: s_github
       path: agrasth/Org_test_Automation_PowerShell
       branches:
         include: master
