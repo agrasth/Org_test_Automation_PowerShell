@@ -23,14 +23,6 @@ pipelines:
       - name: S_PS_GPM_6284_0001_1
         type: GoPublishModule
         configuration:
-          runtime:
-            type: image
-            image:
-              custom:
-                registry: docker
-                sourceRepository: docker-registry
-                name: docker.jfrog.io/jfrog/pipelines-w19node
-                tag: 18.17.0-13710
           integrations:
             - name: s_artifactory
           inputResources:
